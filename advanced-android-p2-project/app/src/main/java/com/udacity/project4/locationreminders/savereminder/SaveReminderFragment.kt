@@ -157,8 +157,6 @@ class SaveReminderFragment : BaseFragment() {
     override fun onRequestPermissionsResult(
         requestCode: Int, permissions: Array<String>, grantResults: IntArray
     ) {
-        // Check if location permissions are granted and if so enable the
-        // location data layer.
         if (requestCode == REQUEST_LOCATION_PERMISSION &&
             grantResults[FINE_PERMISSION_INDEX] == PackageManager.PERMISSION_GRANTED
             ||
