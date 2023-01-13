@@ -9,7 +9,6 @@ import com.udacity.project4.locationreminders.data.source.local.FakeDataSource
 import com.udacity.project4.locationreminders.data.source.local.ReminderDTO
 import getOrAwaitValue
 import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.test.runBlockingTest
 import org.hamcrest.CoreMatchers.`is`
 import org.junit.Assert.*

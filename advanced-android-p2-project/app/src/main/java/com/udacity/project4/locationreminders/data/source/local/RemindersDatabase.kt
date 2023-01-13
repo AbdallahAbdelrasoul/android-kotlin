@@ -2,7 +2,6 @@ package com.udacity.project4.locationreminders.data.source.local
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.udacity.project4.locationreminders.data.source.local.ReminderDTO
 
 /**
  * The Room Database that contains the reminders table.

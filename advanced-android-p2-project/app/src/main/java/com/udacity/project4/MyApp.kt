@@ -2,10 +2,10 @@ package com.udacity.project4
 
 import android.app.Application
 import androidx.annotation.VisibleForTesting
-import com.udacity.project4.locationreminders.data.ReminderDataSource
-import com.udacity.project4.locationreminders.data.source.local.LocalDB
 import com.udacity.project4.locationreminders.data.DefaultRemindersRepository
+import com.udacity.project4.locationreminders.data.ReminderDataSource
 import com.udacity.project4.locationreminders.data.RemindersRepository
+import com.udacity.project4.locationreminders.data.source.local.LocalDB
 import com.udacity.project4.locationreminders.data.source.local.LocalDataSource
 import com.udacity.project4.locationreminders.reminderslist.RemindersListViewModel
 import com.udacity.project4.locationreminders.savereminder.SaveReminderViewModel

@@ -4,7 +4,6 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.udacity.project4.locationreminders.data.source.local.ReminderDTO
 
 /**
  * Data Access Object for the reminders table.

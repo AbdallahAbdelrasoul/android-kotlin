@@ -1,7 +1,6 @@
 package com.udacity.project4.locationreminders.data.source.local
 
 import com.udacity.project4.locationreminders.data.ReminderDataSource
-import com.udacity.project4.locationreminders.data.source.local.ReminderDTO
 import com.udacity.project4.locationreminders.data.Result
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers

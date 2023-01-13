@@ -4,19 +4,19 @@ import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.MediumTest
 import com.udacity.project4.MainCoroutineRule
 import com.udacity.project4.locationreminders.data.DefaultRemindersRepository
+import com.udacity.project4.locationreminders.data.Result
 import com.udacity.project4.locationreminders.data.source.local.FakeDataSource
 import com.udacity.project4.locationreminders.data.source.local.ReminderDTO
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runBlockingTest
 import org.hamcrest.core.IsEqual
 import org.junit.Assert
-import org.junit.Before
-import org.junit.Test
-import org.junit.runner.RunWith
-import com.udacity.project4.locationreminders.data.Result
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertThat
+import org.junit.Before
 import org.junit.Rule
+import org.junit.Test
+import org.junit.runner.RunWith
 
 @ExperimentalCoroutinesApi
 @RunWith(AndroidJUnit4::class)

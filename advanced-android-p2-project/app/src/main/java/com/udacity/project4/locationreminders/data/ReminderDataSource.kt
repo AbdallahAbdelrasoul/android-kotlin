@@ -1,7 +1,6 @@
 package com.udacity.project4.locationreminders.data
 
 import com.udacity.project4.locationreminders.data.source.local.ReminderDTO
-import com.udacity.project4.locationreminders.data.Result
 
 /**
  * Main entry point for accessing reminders data.

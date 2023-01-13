@@ -1,9 +1,9 @@
 package com.udacity.project4.locationreminders.data.source
 
 import com.udacity.project4.locationreminders.data.RemindersRepository
-import com.udacity.project4.locationreminders.data.source.local.ReminderDTO
 import com.udacity.project4.locationreminders.data.Result
 import com.udacity.project4.locationreminders.data.source.local.FakeDataSource
+import com.udacity.project4.locationreminders.data.source.local.ReminderDTO
 
 class FakeRemindersRepository(private var dataSource : FakeDataSource) : RemindersRepository {
 

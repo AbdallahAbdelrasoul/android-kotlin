@@ -3,13 +3,7 @@ package com.udacity.project4.locationreminders.geofence
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import android.util.Log
-import androidx.core.app.JobIntentService
 import com.example.android.treasureHunt.GeofencingConstants
-import com.example.android.treasureHunt.errorMessage
-import com.google.android.gms.location.Geofence
-import com.google.android.gms.location.GeofencingEvent
-import com.udacity.project4.R
 
 /**
  * Triggered by the Geofence.  Since we can have many Geofences at once, we pull the request

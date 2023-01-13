@@ -3,19 +3,19 @@ package com.udacity.project4.locationreminders.geofence
 import android.content.Context
 import android.content.Intent
 import android.util.Log
+import android.widget.Toast
 import androidx.core.app.JobIntentService
+import com.example.android.treasureHunt.errorMessage
 import com.google.android.gms.location.Geofence
 import com.google.android.gms.location.GeofencingEvent
 import com.udacity.project4.locationreminders.data.ReminderDataSource
-import com.udacity.project4.locationreminders.data.source.local.ReminderDTO
 import com.udacity.project4.locationreminders.data.Result
+import com.udacity.project4.locationreminders.data.source.local.ReminderDTO
 import com.udacity.project4.locationreminders.reminderslist.ReminderDataItem
 import com.udacity.project4.utils.sendNotification
 import kotlinx.coroutines.*
 import org.koin.android.ext.android.inject
 import kotlin.coroutines.CoroutineContext
-import android.widget.Toast;
-import com.example.android.treasureHunt.errorMessage
 
 private const val TAG = "GeoTransJbIntService"
 

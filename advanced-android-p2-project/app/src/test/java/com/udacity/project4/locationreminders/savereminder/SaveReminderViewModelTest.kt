@@ -5,19 +5,19 @@ import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.udacity.project4.locationreminders.MainCoroutineRule
 import com.udacity.project4.locationreminders.data.FakeRemindersRepository
+import com.udacity.project4.locationreminders.data.Result
 import com.udacity.project4.locationreminders.data.source.local.FakeDataSource
 import com.udacity.project4.locationreminders.data.source.local.ReminderDTO
 import com.udacity.project4.locationreminders.reminderslist.ReminderDataItem
+import getOrAwaitValue
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runBlockingTest
+import org.hamcrest.CoreMatchers.`is`
+import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.junit.Assert.*
-import com.udacity.project4.locationreminders.data.Result
-import getOrAwaitValue
-import org.hamcrest.CoreMatchers.`is`
 import org.koin.core.context.stopKoin
 
 @ExperimentalCoroutinesApi

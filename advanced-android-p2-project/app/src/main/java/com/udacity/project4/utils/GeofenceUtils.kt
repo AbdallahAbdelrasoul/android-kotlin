@@ -16,14 +16,11 @@
 
 package com.example.android.treasureHunt
 
-import android.Manifest
 import android.annotation.SuppressLint
 import android.app.PendingIntent
 import android.content.Context
-import android.content.pm.PackageManager
 import android.util.Log
 import android.widget.Toast
-import androidx.core.app.ActivityCompat
 import com.google.android.gms.location.*
 import com.udacity.project4.R
 import com.udacity.project4.locationreminders.reminderslist.ReminderDataItem
@@ -49,7 +46,11 @@ fun errorMessage(context: Context, errorCode: Int): String {
 }
 
 @SuppressLint("MissingPermission")
-fun addReminderGeofence(reminderDataItem: ReminderDataItem, geofencePendingIntent:PendingIntent, context: Context) {
+fun addReminderGeofence(
+    reminderDataItem: ReminderDataItem,
+    geofencePendingIntent: PendingIntent,
+    context: Context
+) {
 
     val geofencingClient = LocationServices.getGeofencingClient(context)
 
@@ -69,15 +70,18 @@ fun addReminderGeofence(reminderDataItem: ReminderDataItem, geofencePendingInten
         .addGeofence(geofence)
         .build()
 
-    geofencingClient.addGeofences(geofencingRequest,geofencePendingIntent).run {
+
+    geofencingClient.addGeofences(geofencingRequest, geofencePendingIntent).run {
         addOnSuccessListener {
             // Geofences added.
-//            Toast.makeText(context, R.string.geofences_added, Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, R.string.geofences_added, Toast.LENGTH_SHORT).show()
             Log.e("Add Geofence : ", geofence.requestId)
         }
-        addOnFailureListener{
-            Toast.makeText(context, R.string.geofences_not_added,
-                Toast.LENGTH_SHORT).show()
+        addOnFailureListener {
+            Toast.makeText(
+                context, R.string.geofences_not_added,
+                Toast.LENGTH_SHORT
+            ).show()
             it.message?.let {
                 Log.w("Add Geofence Error : ", it)
             }
@@ -98,3 +102,5 @@ internal object GeofencingConstants {
     const val ACTION_GEOFENCE_EVENT =
         "HuntMainActivity.treasureHunt.action.ACTION_GEOFENCE_EVENT"
 }
+
+
