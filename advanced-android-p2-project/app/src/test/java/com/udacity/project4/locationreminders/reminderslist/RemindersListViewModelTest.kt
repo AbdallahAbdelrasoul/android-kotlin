@@ -11,6 +11,7 @@ import getOrAwaitValue
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runBlockingTest
 import org.hamcrest.CoreMatchers.`is`
+import org.hamcrest.CoreMatchers.nullValue
 import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Rule
@@ -42,7 +43,7 @@ class RemindersListViewModelTest {
     private lateinit var viewModel: RemindersListViewModel
 
     @Before
-    fun createViewModel() {
+    fun init() {
         stopKoin()//stop the original app koin
 
         localDataSource = FakeDataSource(localReminders.toMutableList())
@@ -51,24 +52,44 @@ class RemindersListViewModelTest {
     }
 
     @Test
-    fun loadReminders_getAllReminders_intoReminderListLiveData() = mainCoroutineRule.runBlockingTest{
-        // GIVEN - loadReminders function
+    fun loadReminders_getAllReminders_returnWithoutError() = mainCoroutineRule.runBlockingTest{
+        // GIVEN - Available Reminders
 
         mainCoroutineRule.pauseDispatcher()
-        // WHEN - Called
+        // WHEN - Call loadReminders()
         viewModel.loadReminders()
 
-        // THEN- ShowLoading is Displayed until reminders is loaded
+        // ShowLoading is Displayed until reminders is loaded
         assertThat(viewModel.showLoading.getOrAwaitValue(), `is`(true))
         mainCoroutineRule.resumeDispatcher()
 
-        // THEN - LiveData Value equals reminders of dataSource
+//         THEN - remindersList LiveData Value equals reminders of dataSource
         val value = viewModel.remindersList.getOrAwaitValue()
         assertEquals(value.size , localReminders.size)
-
+//         AND showSnackBar Livedata is null
+        assertThat(viewModel.showSnackBar.value, `is`(nullValue()))
         // AND ShowLoading is not Displayed
         assertThat(viewModel.showLoading.getOrAwaitValue(), `is`(false))
-
     }
 
+    @Test
+    fun loadReminders_unavailableReminders_returnErrorResult() = mainCoroutineRule.runBlockingTest{
+        // GIVEN - Unavailable Reminders
+
+        mainCoroutineRule.pauseDispatcher()
+        // WHEN - Called with return error
+        repository.setReturnError(true)
+        viewModel.loadReminders()
+
+        // ShowLoading is Displayed until reminders is loaded
+        assertThat(viewModel.showLoading.getOrAwaitValue(), `is`(true))
+        mainCoroutineRule.resumeDispatcher()
+
+        // THEN - reminderList livedata is null
+        assertThat(viewModel.remindersList.value, `is`(nullValue()))
+        // AND - showSnackBar LiveData Value equals error message
+        assertEquals(viewModel.showSnackBar.getOrAwaitValue() , repository.errMsg)
+        // AND - ShowLoading is not Displayed
+        assertThat(viewModel.showLoading.getOrAwaitValue(), `is`(false))
+    }
 }

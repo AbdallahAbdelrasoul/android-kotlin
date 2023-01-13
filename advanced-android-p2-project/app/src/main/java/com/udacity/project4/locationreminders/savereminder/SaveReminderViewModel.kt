@@ -69,7 +69,6 @@ class SaveReminderViewModel(val app: Application, private val repository: Remind
             when (saved) {
                 is Result.Success<*> -> {
                     reminderSaved.value = saved.data as Long
-                    showLoading.value = false
                     showToast.value = app.getString(R.string.reminder_saved)
                     navigationCommand.value = NavigationCommand.Back
                 }
@@ -78,7 +77,7 @@ class SaveReminderViewModel(val app: Application, private val repository: Remind
                     showToast.value = saved.message
                 }
             }
-
+            showLoading.value = false
         }
     }
 

@@ -1,8 +1,11 @@
 package com.udacity.project4.locationreminders.savereminder
 
+import android.app.Application
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import com.udacity.project4.R
+import com.udacity.project4.base.NavigationCommand
 import com.udacity.project4.locationreminders.MainCoroutineRule
 import com.udacity.project4.locationreminders.data.FakeRemindersRepository
 import com.udacity.project4.locationreminders.data.Result
@@ -12,7 +15,7 @@ import com.udacity.project4.locationreminders.reminderslist.ReminderDataItem
 import getOrAwaitValue
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runBlockingTest
-import org.hamcrest.CoreMatchers.`is`
+import org.hamcrest.CoreMatchers.*
 import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Rule
@@ -42,6 +45,7 @@ class SaveReminderViewModelTest {
 
     // Class Under Test
     private lateinit var viewModel: SaveReminderViewModel
+    private lateinit var appContext: Application
 
     @Before
     fun createViewModel() {
@@ -49,11 +53,12 @@ class SaveReminderViewModelTest {
 
         localDataSource = FakeDataSource(localReminders.toMutableList())
         repository = FakeRemindersRepository(localDataSource)
-        viewModel = SaveReminderViewModel(ApplicationProvider.getApplicationContext(), repository)
+        appContext = ApplicationProvider.getApplicationContext()
+        viewModel = SaveReminderViewModel(appContext, repository)
     }
 
     @Test
-    fun validateAndSaveReminder_insertedLocalDataSource() = mainCoroutineRule.runBlockingTest {
+    fun validateAndSaveReminder_insertedInLocalDataSource() = mainCoroutineRule.runBlockingTest {
         // GIVEN - Two Reminders in the dataSource
 
         // WHEN - save a new Reminder
@@ -65,11 +70,11 @@ class SaveReminderViewModelTest {
     }
 
     @Test
-    fun validateAndSaveReminder_loading() {
+    fun validateAndSaveReminder_saveReminder_withoutError() {
         // Pause dispatcher so you can verify initial values.
         mainCoroutineRule.pauseDispatcher()
 
-        // Save a new Reminder
+        // Save a new Reminder with exception
         viewModel.validateAndSaveReminder(reminderDTO3)
 
         // Then assert that the progress indicator is shown.
@@ -78,7 +83,32 @@ class SaveReminderViewModelTest {
         // Execute pending coroutines actions.
         mainCoroutineRule.resumeDispatcher()
 
-        // Then assert that the progress indicator is hidden.
+        // test LiveData objects
+        assertThat(viewModel.reminderSaved.getOrAwaitValue(), not(-1L))
         assertThat(viewModel.showLoading.getOrAwaitValue(), `is`(false))
+        assertThat(viewModel.showToast.getOrAwaitValue(), `is`(appContext.getString(R.string.reminder_saved)))
+        assertEquals(viewModel.navigationCommand.getOrAwaitValue(), (NavigationCommand.Back))
+    }
+
+    @Test
+    fun validateAndSaveReminder_notSaveReminder_withError() {
+        // Pause dispatcher so you can verify initial values.
+        mainCoroutineRule.pauseDispatcher()
+
+        // Save a new Reminder with Exception
+        repository.setReturnError(true)
+        viewModel.validateAndSaveReminder(reminderDTO3)
+
+        // Then assert that the progress indicator is shown.
+        assertThat(viewModel.showLoading.getOrAwaitValue(), `is`(true))
+
+        // Execute pending coroutines actions.
+        mainCoroutineRule.resumeDispatcher()
+
+        // test LiveData objects
+        assertThat(viewModel.reminderSaved.getOrAwaitValue(), `is`(-1L))
+        assertThat(viewModel.showLoading.getOrAwaitValue(), `is`(false))
+        assertThat(viewModel.showToast.getOrAwaitValue(), `is`(repository.errMsg))
+        assertThat(viewModel.navigationCommand.value, `is`(nullValue()))
     }
 }
