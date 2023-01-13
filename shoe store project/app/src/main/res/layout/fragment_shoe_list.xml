@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".screens.shoelist.ShoeListFragment">
+
+    <!-- ShoeList dataBinding to make the list updated and perform fab click action-->
+    <data>
+        <variable
+            name="viewModel"
+            type="com.udacity.shoestore.ActivityMainViewModel" />
+    </data>
+
+    <!-- To contain both the scrollview of the shoe list and the floating action button -->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/myLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <!-- Floating Action Button -->
+        <!-- To navigate to Shoe Detail screen and add new Shoe -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            style="@style/MyBtn"
+            app:rippleColor="@color/lightbanafseg"
+            android:src="@drawable/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/to_add_new_shoe"
+            android:layout_gravity="end|bottom"
+            android:layout_marginBottom="@dimen/margin30"
+            android:layout_marginEnd="@dimen/margin30"
+            android:onClick="@{() -> viewModel.onFABclickEvent()}"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

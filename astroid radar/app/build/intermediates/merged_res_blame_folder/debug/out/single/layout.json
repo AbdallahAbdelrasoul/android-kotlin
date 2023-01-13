@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_main.xml",
+        "source": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\src\\main\\res\\layout\\fragment_main.xml"
+    },
+    {
+        "merged": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_detail.xml",
+        "source": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\src\\main\\res\\layout\\fragment_detail.xml"
+    },
+    {
+        "merged": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\asteroid_item.xml",
+        "source": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\src\\main\\res\\layout\\asteroid_item.xml"
+    }
+]

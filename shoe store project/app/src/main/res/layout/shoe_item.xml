@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myConstraintLayout">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin10"
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_marginEnd="@dimen/margin10"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/shoeimg"
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            android:background="@android:color/white"
+            android:contentDescription="@string/itemimg"
+            android:src="@drawable/shoe"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/shoeName"
+            style="@style/shoelistText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin20"
+            android:layout_marginTop="@dimen/margin10"
+            android:fontFamily="@font/basic"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/shoeimg"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Adidas"/>
+
+        <TextView
+            android:id="@+id/shoeSize"
+            style="@style/shoelistText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin20"
+            android:layout_marginTop="@dimen/margin10"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/shoeimg"
+            app:layout_constraintTop_toBottomOf="@id/shoeName"
+            tools:text="0.45"/>
+
+        <TextView
+            android:id="@+id/shoeCompany"
+            style="@style/shoelistText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin20"
+            android:layout_marginTop="@dimen/margin10"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/shoeimg"
+            app:layout_constraintTop_toBottomOf="@id/shoeSize"
+            tools:text="Adidas Company"/>
+
+        <TextView
+            android:id="@+id/shoeDesc"
+            style="@style/shoelistText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin20"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginBottom="@dimen/margin10"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/shoeimg"
+            app:layout_constraintTop_toBottomOf="@id/shoeCompany"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="oooooooooo"/>
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/editBtn"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/margin5"-->
+<!--            android:background="@android:color/white"-->
+<!--            android:contentDescription="editImgBtn"-->
+<!--            android:minWidth="48dp"-->
+<!--            android:minHeight="48dp"-->
+<!--            android:src="@drawable/edit"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/shoeDesc" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

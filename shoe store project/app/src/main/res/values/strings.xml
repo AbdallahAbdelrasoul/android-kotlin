@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Shoe Store</string>
+
+    <string name="app_title">SHOE STORE</string>
+
+    <string name="shoe_list">SHOE LIST</string>
+    <string name="add_new_shoe">ADD NEW SHOE</string>
+
+    <string name="sign_in">SIGN IN</string>
+    <string name="welcomeTxt0">Welcome In</string>
+    <string name="welcomeTxt1">The Shoe Store</string>
+    <string name="welcomeTxt2">FASHIONABLE\nCOMFORTABLE\nSNEAKERS</string>
+
+    <string name="inst">Instructions</string>
+    <string name="instWords">We have many products that suit all age groups, men and women\nFor adults, youth and children in all shoe sizes,In addition to discounts and gifts that we offer you</string>
+    <string name="textViewEmail">Email</string>
+    <string name="editTextEmailHint">example@shoestore.com</string>
+
+    <string name="textViewPass">Password</string>
+    <string name="editTxtPassHint">********</string>
+
+    <string name="btnTxtLogin">Login</string>
+    <string name="btnTxtSignup">Sign Up</string>
+    <string name="go_shopping">Go Shopping</string>
+    <string name="shoe_image">Shoe Image</string>
+    <string name="itemimg">itemImg</string>
+    <string name="to_add_new_shoe">To Add New Shoe</string>
+    <string name="hello_blank_fragment">Shoe Store</string>
+    <string name="logout">Logout</string>
+    <string name="shoe_name">Shoe Name</string>
+    <string name="company">Company</string>
+    <string name="shoe_size">Shoe Size</string>
+    <string name="description">Description</string>
+    <string name="save">SAVE</string>
+    <string name="cancel">CANCEL</string>
+    <string name="shoeimg">shoeImg</string>
+</resources>

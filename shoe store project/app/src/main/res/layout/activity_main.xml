@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <!-- This is the main layout where the toolbar and the navigation host fragment located -->
+
+    <!-- Vertical linearLayout that contain the toolbar and the host fragment-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- toolbar to navigate through the app -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/mytoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Banafseg"
+            app:menu="@menu/toolbar_menu"
+            app:titleTextColor="@android:color/white"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        />
+
+        <!-- The Navigation Host Fragment that host all fragments on it -->
+        <!--FragmentContainerView make the app crash!!!-->
+        <fragment
+            android:id="@+id/my_nav_host_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/navigation" />
+
+    </LinearLayout>
+</layout>

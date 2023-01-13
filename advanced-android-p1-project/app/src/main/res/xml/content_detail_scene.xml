@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint
+            android:id="@+id/file_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/file_name_textview"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/file_name_textview" />
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+
+        <Constraint
+            android:id="@+id/file_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/startMargin"
+            android:layout_marginEnd="@dimen/endMargin"
+            app:layout_constraintBottom_toBottomOf="@+id/file_name_textview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/file_name_textview"
+            app:layout_constraintTop_toTopOf="@+id/file_name_textview" />
+
+    </ConstraintSet>
+
+    <Transition
+        app:constraintSetEnd="@id/end"
+        app:constraintSetStart="@+id/start"
+        app:duration="3000"
+        app:autoTransition="animateToEnd">
+    </Transition>
+
+</MotionScene>

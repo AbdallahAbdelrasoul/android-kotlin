@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".screens.login.LoginFragment">
+
+    <!-- scroll view to make the layout flexible in portrait and landscape ui modes -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true">
+
+        <!-- to make the content responsive to any screen size -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <ImageView
+                android:id="@+id/loginImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/userprofile"
+                android:layout_marginTop="@dimen/margin20"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:contentDescription="LOGIN_IMG" />
+
+            <TextView
+                android:id="@+id/sign_in_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/welcom_back_style"
+                android:text="@string/sign_in"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/loginImg"
+                />
+
+
+            <TextView
+                android:id="@+id/emailLabel"
+                style="@style/txtStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin30"
+                android:layout_marginEnd="@dimen/margin30"
+                android:layout_marginTop="@dimen/margin50"
+                android:text="@string/textViewEmail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sign_in_text_view" />
+
+            <EditText
+                android:id="@+id/emailEditTxt"
+                style="@style/emailInputStyle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/emailLabel" />
+
+            <TextView
+                android:id="@+id/passLabel"
+                style="@style/txtStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin30"
+                android:layout_marginTop="@dimen/margin50"
+                android:layout_marginEnd="@dimen/margin30"
+                android:text="@string/textViewPass"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/emailEditTxt" />
+
+
+            <EditText
+                android:id="@+id/passEditTxt"
+                style="@style/passInputStyle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/passLabel" />
+
+            <Button
+                android:id="@+id/loginBtn"
+                style="@style/MyBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin30"
+                android:layout_marginTop="@dimen/margin50"
+                android:layout_marginEnd="@dimen/margin30"
+                android:text="@string/btnTxtLogin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/passEditTxt" />
+
+            <Button
+                android:id="@+id/SignupBtn"
+                style="@style/MyBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin30"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_marginEnd="@dimen/margin30"
+                android:layout_marginBottom="@dimen/margin20"
+                android:text="@string/btnTxtSignup"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/loginBtn" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</layout>

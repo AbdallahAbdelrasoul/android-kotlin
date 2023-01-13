@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="passInputStyle">
+        <item name="android:textDirection">ltr</item>
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:focusedByDefault">false</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/margin30</item>
+        <item name="android:layout_marginEnd">@dimen/margin30</item>
+        <item name="android:autofillHints">password</item>
+        <item name="android:hint">@string/editTxtPassHint</item>
+        <item name="android:inputType">textPassword</item>
+    </style>
+</resources>

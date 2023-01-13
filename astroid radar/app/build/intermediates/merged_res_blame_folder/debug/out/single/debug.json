@@ -1,0 +1,106 @@
+[
+    {
+        "merged": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\build\\intermediates\\merged_res\\debug\\navigation_main_nav_graph.xml.flat",
+        "source": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\src\\main\\res\\navigation\\main_nav_graph.xml"
+    },
+    {
+        "merged": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_help_circle.xml.flat",
+        "source": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\src\\main\\res\\drawable\\ic_help_circle.xml"
+    },
+    {
+        "merged": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_status_normal.xml.flat",
+        "source": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\src\\main\\res\\drawable\\ic_status_normal.xml"
+    },
+    {
+        "merged": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\build\\intermediates\\merged_res\\debug\\layout_asteroid_item.xml.flat",
+        "source": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\src\\main\\res\\layout\\asteroid_item.xml"
+    },
+    {
+        "merged": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
+        "source": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_detail.xml.flat",
+        "source": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\src\\main\\res\\layout\\fragment_detail.xml"
+    },
+    {
+        "merged": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\build\\intermediates\\merged_res\\debug\\drawable_asteroid_hazardous.png.flat",
+        "source": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\src\\main\\res\\drawable\\asteroid_hazardous.png"
+    },
+    {
+        "merged": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\build\\intermediates\\merged_res\\debug\\drawable_placeholder_picture_of_day.xml.flat",
+        "source": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\src\\main\\res\\drawable\\placeholder_picture_of_day.xml"
+    },
+    {
+        "merged": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_main.xml.flat",
+        "source": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\src\\main\\res\\layout\\fragment_main.xml"
+    },
+    {
+        "merged": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\build\\intermediates\\merged_res\\debug\\menu_main_overflow_menu.xml.flat",
+        "source": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\src\\main\\res\\menu\\main_overflow_menu.xml"
+    },
+    {
+        "merged": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\build\\intermediates\\merged_res\\debug\\drawable_asteroid_safe.png.flat",
+        "source": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\src\\main\\res\\drawable\\asteroid_safe.png"
+    },
+    {
+        "merged": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_status_potentially_hazardous.xml.flat",
+        "source": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\src\\main\\res\\drawable\\ic_status_potentially_hazardous.xml"
+    },
+    {
+        "merged": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "F:\\Udacity\\udacity_Workspace\\android-kotlin\\astroid radar\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    }
+]

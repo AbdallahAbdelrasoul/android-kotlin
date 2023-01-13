@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@android:color/holo_blue_dark</color>
+    <color name="colorPrimaryDark">@color/Banafseg</color>
+    <color name="colorAccent">@android:color/holo_blue_dark</color>
+    <color name="Banafseg">#1A97BC</color>
+    <color name="lightbanafseg">#21C6F7</color>
+    <color name="lightgray">#F9F9F9</color>
+</resources>

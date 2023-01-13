@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".screens.shoedetail.ShoeDetailFragment">
+
+    <!-- Connect to the View Model Data using two way DataBinding -->
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.udacity.shoestore.ActivityMainViewModel" />
+    </data>
+
+    <!-- Scroll to make it easy to fill The Details of the Shoe and Save or Cancel-->
+    <ScrollView
+        android:id="@+id/detail_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin10"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/name_text_input_layout"
+                style="@style/text_input_layout_style">
+
+                <EditText
+                    android:id="@+id/name_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:autofillHints="name"
+                    android:ems="10"
+                    android:hint="@string/shoe_name"
+                    android:inputType="text"
+                    android:onTextChanged="@{ () -> viewModel.onTextChange(`shoe name`)}"
+                    android:text="@={viewModel.shoe.name}"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/company_text_input_layout"
+                style="@style/text_input_layout_style">
+
+                <EditText
+                    android:id="@+id/company_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:autofillHints="name"
+                    android:ems="10"
+                    android:hint="@string/company"
+                    android:inputType="text"
+                    android:onTextChanged="@{ () -> viewModel.onTextChange(`company name`)}"
+                    android:text="@={viewModel.shoe.company}"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/size_text_input_layout"
+                style="@style/text_input_layout_style">
+
+                <EditText
+                    android:id="@+id/size_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:hint="@string/shoe_size"
+                    android:importantForAutofill="no"
+                    android:inputType="numberDecimal"
+                    android:onTextChanged="@{ () -> viewModel.onTextChange(`shoe size`)}"
+                    android:text="@={``+ viewModel.shoe.size}"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/desc_text_input_layout"
+                style="@style/text_input_layout_style">
+
+                <EditText
+                    android:id="@+id/desc_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:hint="@string/description"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:onTextChanged="@{ () -> viewModel.onTextChange(`description`)}"
+                    android:text="@={viewModel.shoe.description}"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/save_btn"
+                style="@style/MyBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin10"
+                android:layout_marginEnd="@dimen/margin10"
+                android:layout_marginBottom="@dimen/margin5"
+                android:onClick="@{() ->viewModel.onSaveBtnClickEvent()}"
+                android:text="@string/save" />
+
+            <Button
+                android:id="@+id/cancel_btn"
+                style="@style/MyBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin10"
+                android:layout_marginEnd="@dimen/margin10"
+                android:layout_marginBottom="@dimen/margin5"
+                android:onClick="@{() ->viewModel.onCancelBtnClickEvent()}"
+                android:text="@string/cancel" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</layout>
