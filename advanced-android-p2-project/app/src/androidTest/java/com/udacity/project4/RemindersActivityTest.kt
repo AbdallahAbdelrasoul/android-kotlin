@@ -7,9 +7,11 @@ import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.IdlingRegistry
 import androidx.test.espresso.action.ViewActions.*
 import androidx.test.espresso.assertion.ViewAssertions.matches
+import androidx.test.espresso.matcher.RootMatchers.withDecorView
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.LargeTest
+import com.google.android.material.internal.ContextUtils.getActivity
 import com.udacity.project4.locationreminders.RemindersActivity
 import com.udacity.project4.locationreminders.data.DefaultRemindersRepository
 import com.udacity.project4.locationreminders.data.ReminderDataSource
@@ -22,7 +24,11 @@ import com.udacity.project4.locationreminders.savereminder.SaveReminderViewModel
 import com.udacity.project4.util.DataBindingIdlingResource
 import com.udacity.project4.util.monitorActivity
 import com.udacity.project4.utils.EspressoIdlingResource
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.withContext
+import org.hamcrest.CoreMatchers.`is`
+import org.hamcrest.CoreMatchers.not
 import org.junit.After
 import org.junit.Assert.*
 import org.junit.Before
@@ -154,12 +160,17 @@ class RemindersActivityTest :
 
         // back to saveReminder fragment with selectedLocation value
         onView(withId(R.id.selectedLocation)).check(matches(isDisplayed()))
-        // press save
+        // press save FAB
         onView(withId(R.id.saveReminder))
             .check(matches(isDisplayed()))
             .perform(click())
 
-        // Verify reminder is displayed on screen in the reminder list.
+        // Verify Toast of Confirmation of saving is displayed on screen
+        onView(withText(R.string.reminder_saved)).inRoot(
+            withDecorView(not(`is`(getActivity(appContext)?.window?.decorView)))
+        ).check(matches(isDisplayed()))
+
+        // Verify reminder is displayed on screen in the reminder list fragment.
         onView(withText("newReminder")).check(matches(isDisplayed()))
 
         // Make sure the activity is closed.
