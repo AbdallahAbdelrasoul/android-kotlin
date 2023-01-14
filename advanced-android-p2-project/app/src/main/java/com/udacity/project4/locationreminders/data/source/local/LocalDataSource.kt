@@ -18,7 +18,12 @@ class LocalDataSource internal constructor(
     override suspend fun getReminders(): Result<List<ReminderDTO>> =
         withContext(ioDispatcher) {
             return@withContext try {
-                Result.Success(remindersDao.getReminders())
+                val reminders = remindersDao.getReminders()
+                if (reminders.isNotEmpty()) {
+                    Result.Success(reminders)
+                } else {
+                    Result.Error("no reminders found!")
+                }
             } catch (ex: Exception) {
                 Result.Error(ex.localizedMessage)
             }
