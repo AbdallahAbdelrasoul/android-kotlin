@@ -27,6 +27,7 @@ class RemindersListViewModel(
             val result = repository.getReminders()
             showLoading.postValue(false)
             when (result) {
+                // if not emptyList
                 is Result.Success<*> -> {
                     val dataList = ArrayList<ReminderDataItem>()
                     dataList.addAll((result.data as List<ReminderDTO>).map { reminder ->
@@ -42,8 +43,10 @@ class RemindersListViewModel(
                     })
                     remindersList.value = dataList
                 }
-                is Result.Error ->
+                // if exception or emptyList
+                is Result.Error ->{
                     showSnackBar.value = result.message
+                }
             }
 
             //check if no data has to be shown

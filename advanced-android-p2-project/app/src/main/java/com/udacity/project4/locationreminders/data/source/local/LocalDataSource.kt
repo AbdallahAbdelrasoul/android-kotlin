@@ -37,7 +37,11 @@ class LocalDataSource internal constructor(
     override suspend fun saveReminder(reminder: ReminderDTO): Result<Long> =
         withContext(ioDispatcher) {
             return@withContext try {
-                Result.Success(remindersDao.saveReminder(reminder))
+                val saved = remindersDao.saveReminder(reminder)
+                if(saved != -1L)
+                    Result.Success(saved)
+                else
+                    Result.Error("Reminder Not Saved")
             } catch (ex: Exception) {
                 Result.Error(ex.message)
             }

@@ -86,31 +86,25 @@ class DefaultRemindersRepositoryTest {
     @Test
     fun saveReminder_insertReminderIntoLocalDataSource() = runBlocking {
         // GIVEN - save one Reminder in DB
-        val inserted = reminderRepo.saveReminder(reminderDTO1) as Result.Success
+        val inserted = reminderRepo.saveReminder(reminderDTO1)
 
-        // WHEN - returned value != -1
-        if (inserted.data != -1L) {
-
-            // THEN - is inserted successfully
-            val reminder = reminderRepo.getReminder(reminderDTO1.id) as Result.Success
-            assertThat(reminder.data.id, IsEqual(reminderDTO1.id))
+        when(inserted){
+            // WHEN - returned value != -1
+            is Result.Success<*> -> {
+                // THEN - is inserted successfully
+                assertNotEquals(inserted.data,-1L)
+                val reminder = reminderRepo.getReminder(reminderDTO1.id) as Result.Success
+                assertThat(reminder.data.id, IsEqual(reminderDTO1.id))
+            }
+            // WHEN - returned value == -1
+            is Result.Error ->{
+                // THEN - is not inserted and get Error
+                assertEquals(inserted.message,"Reminder Not Saved")
+                val reminder = reminderRepo.getReminder(reminderDTO1.id) as Result.Error
+                assertThat(reminder.message, IsEqual("Reminder not found!"))
+            }
         }
     }
-
-    @Test
-    fun saveReminder_insertError_reminderNotSaved() = runBlocking {
-        // GIVEN - save one Reminder in DB
-        val inserted = reminderRepo.saveReminder(reminderDTO1) as Result.Success
-
-        // WHEN - returned value == -1
-        if (inserted.data == -1L) {
-
-            // THEN - is not inserted and get Error
-            val reminder = reminderRepo.getReminder(reminderDTO1.id) as Result.Error
-            assertThat(reminder.message, IsEqual("Reminder not found!"))
-        }
-    }
-
 
     @Test
     fun getReminder_getReminderByIdFromLocalDataSource() = runBlocking {
@@ -147,16 +141,19 @@ class DefaultRemindersRepositoryTest {
             reminderRepo.saveReminder(reminderDTO1) as Result.Success
 
             // WHEN - delete all reminders
-            val deleted = reminderRepo.deleteAllReminders() as Result.Success
+            val deleted = reminderRepo.deleteAllReminders()
 
-            // successfully deleted , THEN - return error with no data message
-            if (deleted.data) {
-                val reminders = reminderRepo.getReminders() as Result.Error
-                assertThat(reminders.message, `is`("no reminders found!"))
-            } else {
+            when(deleted){
+                // successfully deleted , THEN - return error with no data message
+                is Result.Success<*> -> {
+                    val reminders = reminderRepo.getReminders() as Result.Error
+                    assertThat(reminders.message, `is`("no reminders found!"))
+                }
                 // not deleted , THEN - reminder still in DB
-                val reminders = reminderRepo.getReminders() as Result.Success
-                assertEquals(reminders.data, `is`(not(emptyList<ReminderDTO>())))
+                is Result.Error ->{
+                    val reminders = reminderRepo.getReminders() as Result.Success
+                    assertEquals(reminders.data, `is`(not(emptyList<ReminderDTO>())))
+                }
             }
         }
 
