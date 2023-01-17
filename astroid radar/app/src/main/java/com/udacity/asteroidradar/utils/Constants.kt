@@ -9,7 +9,7 @@ object Constants {
     const val ASTEROID_END_POINT = "neo/rest/v1/feed"
     const val PIC_OF_DAY_END_POINT = "planetary/apod"
 
-    // Put Your Api Key Here
-     const val API_KEY = ""
+    // My Api Key
+    const val API_KEY = "8WDxgbvEHVd43nOaM1PTarZhyixeZtB2P5UFmDDe"
 
 }
