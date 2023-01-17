@@ -10,10 +10,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a4981fb-d8bd-4ccf-90dd-586216105778" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../advanced-android-p1-project/app/src/main/java/com/udacity/DetailActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../advanced-android-p1-project/app/src/main/java/com/udacity/DetailActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../advanced-android-p1-project/app/src/main/java/com/udacity/LoadingButton.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../advanced-android-p1-project/app/src/main/java/com/udacity/LoadingButton.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced-android-p2-project/app/src/androidTest/java/com/udacity/project4/RemindersActivityTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../advanced-android-p2-project/app/src/androidTest/java/com/udacity/project4/RemindersActivityTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced-android-p2-project/app/src/main/java/com/udacity/project4/locationreminders/data/DefaultRemindersRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../advanced-android-p2-project/app/src/main/java/com/udacity/project4/locationreminders/data/DefaultRemindersRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced-android-p2-project/app/src/main/java/com/udacity/project4/locationreminders/geofence/GeofenceTransitionsJobIntentService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../advanced-android-p2-project/app/src/main/java/com/udacity/project4/locationreminders/geofence/GeofenceTransitionsJobIntentService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced-android-p2-project/app/src/main/java/com/udacity/project4/locationreminders/reminderslist/ReminderListFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../advanced-android-p2-project/app/src/main/java/com/udacity/project4/locationreminders/reminderslist/ReminderListFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced-android-p2-project/app/src/main/java/com/udacity/project4/locationreminders/savereminder/SaveReminderFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../advanced-android-p2-project/app/src/main/java/com/udacity/project4/locationreminders/savereminder/SaveReminderFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced-android-p2-project/app/src/main/java/com/udacity/project4/locationreminders/savereminder/SaveReminderViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../advanced-android-p2-project/app/src/main/java/com/udacity/project4/locationreminders/savereminder/SaveReminderViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced-android-p2-project/app/src/main/java/com/udacity/project4/locationreminders/savereminder/selectreminderlocation/SelectLocationFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../advanced-android-p2-project/app/src/main/java/com/udacity/project4/locationreminders/savereminder/selectreminderlocation/SelectLocationFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced-android-p2-project/app/src/main/java/com/udacity/project4/utils/BindingAdapters.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../advanced-android-p2-project/app/src/main/java/com/udacity/project4/locationreminders/utils/BindingAdapters.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced-android-p2-project/app/src/main/java/com/udacity/project4/utils/EspressoIdlingResource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../advanced-android-p2-project/app/src/main/java/com/udacity/project4/locationreminders/utils/EspressoIdlingResource.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced-android-p2-project/app/src/main/java/com/udacity/project4/utils/Extensions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../advanced-android-p2-project/app/src/main/java/com/udacity/project4/locationreminders/utils/Extensions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced-android-p2-project/app/src/main/java/com/udacity/project4/utils/GeofenceUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../advanced-android-p2-project/app/src/main/java/com/udacity/project4/locationreminders/utils/GeofenceUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced-android-p2-project/app/src/main/java/com/udacity/project4/utils/NotificationUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../advanced-android-p2-project/app/src/main/java/com/udacity/project4/locationreminders/utils/NotificationUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced-android-p2-project/app/src/main/java/com/udacity/project4/utils/SingleLiveEvent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../advanced-android-p2-project/app/src/main/java/com/udacity/project4/locationreminders/utils/SingleLiveEvent.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/javaCompile/jarAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/udacity/asteroidradar/utils/Constants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/udacity/asteroidradar/utils/Constants.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,11 +103,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WORKMANAGER_INSPECTOR_NOTIFICATION_DISMISSED" value="true" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="com.android.tools.idea.sqlite.queryhistory" value="select * from asteroids_table where closeApproachDate = '2022-12-08'&#10;select * from asteroids_table where closeApproachDate &gt;= '2022-12-08' order by closeApproachDate ASC&#10;select * from asteroids_table where closeApproachDate &gt;= '' order by closeApproachDate ASC&#10;select * from pic_of_day_table&#10;select * from pic_of_day_table where date = '2022-12-07'" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../nd940-android-kotlin-c4-starter/starter" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Suggestions" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />

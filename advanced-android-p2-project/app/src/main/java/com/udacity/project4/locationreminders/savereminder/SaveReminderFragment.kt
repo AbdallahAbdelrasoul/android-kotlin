@@ -28,7 +28,7 @@ import com.udacity.project4.base.NavigationCommand
 import com.udacity.project4.databinding.FragmentSaveReminderBinding
 import com.udacity.project4.locationreminders.geofence.GeofenceBroadcastReceiver
 import com.udacity.project4.locationreminders.reminderslist.ReminderDataItem
-import com.udacity.project4.utils.setDisplayHomeAsUpEnabled
+import com.udacity.project4.locationreminders.utils.setDisplayHomeAsUpEnabled
 import org.koin.android.ext.android.inject
 
 // For API < 29
