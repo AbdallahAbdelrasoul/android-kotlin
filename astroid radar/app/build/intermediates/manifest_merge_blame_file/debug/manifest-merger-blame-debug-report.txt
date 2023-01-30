@@ -65,13 +65,13 @@
 36        </activity>
 37
 38        <provider
-38-->[com.squareup.picasso:picasso:2.71828] C:\Users\ABDULLAH\.gradle\caches\transforms-3\20405584aca0805a317ca0586953a1b4\transformed\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+38-->[com.squareup.picasso:picasso:2.71828] C:\Users\ABDULLAH\.gradle\caches\transforms-3\76a9afef0b0147c2cdb80d574724ab34\transformed\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
 39            android:name="com.squareup.picasso.PicassoProvider"
-39-->[com.squareup.picasso:picasso:2.71828] C:\Users\ABDULLAH\.gradle\caches\transforms-3\20405584aca0805a317ca0586953a1b4\transformed\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+39-->[com.squareup.picasso:picasso:2.71828] C:\Users\ABDULLAH\.gradle\caches\transforms-3\76a9afef0b0147c2cdb80d574724ab34\transformed\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
 40            android:authorities="com.udacity.asteroidradar.com.squareup.picasso"
-40-->[com.squareup.picasso:picasso:2.71828] C:\Users\ABDULLAH\.gradle\caches\transforms-3\20405584aca0805a317ca0586953a1b4\transformed\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+40-->[com.squareup.picasso:picasso:2.71828] C:\Users\ABDULLAH\.gradle\caches\transforms-3\76a9afef0b0147c2cdb80d574724ab34\transformed\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
 41            android:exported="false" />
-41-->[com.squareup.picasso:picasso:2.71828] C:\Users\ABDULLAH\.gradle\caches\transforms-3\20405584aca0805a317ca0586953a1b4\transformed\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+41-->[com.squareup.picasso:picasso:2.71828] C:\Users\ABDULLAH\.gradle\caches\transforms-3\76a9afef0b0147c2cdb80d574724ab34\transformed\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
 42        <provider
 42-->[androidx.work:work-runtime:2.7.0] C:\Users\ABDULLAH\.gradle\caches\transforms-3\2d1244238a3dce8045ab993b0fab423a\transformed\work-runtime-2.7.0\AndroidManifest.xml:31:9-39:20
 43            android:name="androidx.startup.InitializationProvider"

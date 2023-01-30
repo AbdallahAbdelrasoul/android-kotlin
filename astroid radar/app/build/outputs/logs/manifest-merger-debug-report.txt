@@ -22,7 +22,7 @@ MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\ABDULLAH\.gradle\cache
 MERGED from [androidx.core:core-ktx:1.3.1] C:\Users\ABDULLAH\.gradle\caches\transforms-3\95fee9b074e78656ff65769a7b624d12\transformed\jetified-core-ktx-1.3.1\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.0.0] C:\Users\ABDULLAH\.gradle\caches\transforms-3\cff3b327ff503e55888b2b100c7e0383\transformed\navigation-fragment-ktx-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\ABDULLAH\.gradle\caches\transforms-3\a27da0100fc13feaa9526676c584b065\transformed\recyclerview-1.2.1\AndroidManifest.xml:17:1-24:12
-MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\ABDULLAH\.gradle\caches\transforms-3\20405584aca0805a317ca0586953a1b4\transformed\jetified-picasso-2.71828\AndroidManifest.xml:2:1-14:12
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\ABDULLAH\.gradle\caches\transforms-3\76a9afef0b0147c2cdb80d574724ab34\transformed\jetified-picasso-2.71828\AndroidManifest.xml:2:1-14:12
 MERGED from [androidx.work:work-runtime:2.7.0] C:\Users\ABDULLAH\.gradle\caches\transforms-3\2d1244238a3dce8045ab993b0fab423a\transformed\work-runtime-2.7.0\AndroidManifest.xml:17:1-145:12
 MERGED from [androidx.room:room-runtime:2.4.3] C:\Users\ABDULLAH\.gradle\caches\transforms-3\ec624493a620131c13fa79e988f4837c\transformed\room-runtime-2.4.3\AndroidManifest.xml:17:1-31:12
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\ABDULLAH\.gradle\caches\transforms-3\3869afb5ef749b497dd83cf040b5079f\transformed\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:17:1-24:12
@@ -99,8 +99,8 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-rc1] C:\Users\ABDU
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-rc1] C:\Users\ABDULLAH\.gradle\caches\transforms-3\eb3773a5db72268afe9485b3dbf332a4\transformed\constraintlayout-2.0.0-rc1\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\ABDULLAH\.gradle\caches\transforms-3\767dc5c488aab80ceac3014829f15ab3\transformed\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\ABDULLAH\.gradle\caches\transforms-3\767dc5c488aab80ceac3014829f15ab3\transformed\material-1.0.0\AndroidManifest.xml:22:5-20
-MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\ABDULLAH\.gradle\caches\transforms-3\20405584aca0805a317ca0586953a1b4\transformed\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
-MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\ABDULLAH\.gradle\caches\transforms-3\20405584aca0805a317ca0586953a1b4\transformed\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\ABDULLAH\.gradle\caches\transforms-3\76a9afef0b0147c2cdb80d574724ab34\transformed\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\ABDULLAH\.gradle\caches\transforms-3\76a9afef0b0147c2cdb80d574724ab34\transformed\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
 MERGED from [androidx.work:work-runtime:2.7.0] C:\Users\ABDULLAH\.gradle\caches\transforms-3\2d1244238a3dce8045ab993b0fab423a\transformed\work-runtime-2.7.0\AndroidManifest.xml:30:5-143:19
 MERGED from [androidx.work:work-runtime:2.7.0] C:\Users\ABDULLAH\.gradle\caches\transforms-3\2d1244238a3dce8045ab993b0fab423a\transformed\work-runtime-2.7.0\AndroidManifest.xml:30:5-143:19
 MERGED from [androidx.room:room-runtime:2.4.3] C:\Users\ABDULLAH\.gradle\caches\transforms-3\ec624493a620131c13fa79e988f4837c\transformed\room-runtime-2.4.3\AndroidManifest.xml:24:5-29:19
@@ -187,8 +187,8 @@ MERGED from [androidx.navigation:navigation-fragment-ktx:2.0.0] C:\Users\ABDULLA
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.0.0] C:\Users\ABDULLAH\.gradle\caches\transforms-3\cff3b327ff503e55888b2b100c7e0383\transformed\navigation-fragment-ktx-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\ABDULLAH\.gradle\caches\transforms-3\a27da0100fc13feaa9526676c584b065\transformed\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\ABDULLAH\.gradle\caches\transforms-3\a27da0100fc13feaa9526676c584b065\transformed\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
-MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\ABDULLAH\.gradle\caches\transforms-3\20405584aca0805a317ca0586953a1b4\transformed\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
-MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\ABDULLAH\.gradle\caches\transforms-3\20405584aca0805a317ca0586953a1b4\transformed\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\ABDULLAH\.gradle\caches\transforms-3\76a9afef0b0147c2cdb80d574724ab34\transformed\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\ABDULLAH\.gradle\caches\transforms-3\76a9afef0b0147c2cdb80d574724ab34\transformed\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
 MERGED from [androidx.work:work-runtime:2.7.0] C:\Users\ABDULLAH\.gradle\caches\transforms-3\2d1244238a3dce8045ab993b0fab423a\transformed\work-runtime-2.7.0\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.work:work-runtime:2.7.0] C:\Users\ABDULLAH\.gradle\caches\transforms-3\2d1244238a3dce8045ab993b0fab423a\transformed\work-runtime-2.7.0\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.room:room-runtime:2.4.3] C:\Users\ABDULLAH\.gradle\caches\transforms-3\ec624493a620131c13fa79e988f4837c\transformed\room-runtime-2.4.3\AndroidManifest.xml:20:5-22:41
@@ -298,13 +298,13 @@ INJECTED from F:\Udacity\udacity_Workspace\android-kotlin\astroid radar\app\src\
 		ADDED from F:\Udacity\udacity_Workspace\android-kotlin\astroid radar\app\src\main\AndroidManifest.xml
 		INJECTED from F:\Udacity\udacity_Workspace\android-kotlin\astroid radar\app\src\main\AndroidManifest.xml
 provider#com.squareup.picasso.PicassoProvider
-ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\ABDULLAH\.gradle\caches\transforms-3\20405584aca0805a317ca0586953a1b4\transformed\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\ABDULLAH\.gradle\caches\transforms-3\76a9afef0b0147c2cdb80d574724ab34\transformed\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
 	android:authorities
-		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\ABDULLAH\.gradle\caches\transforms-3\20405584aca0805a317ca0586953a1b4\transformed\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\ABDULLAH\.gradle\caches\transforms-3\76a9afef0b0147c2cdb80d574724ab34\transformed\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
 	android:exported
-		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\ABDULLAH\.gradle\caches\transforms-3\20405584aca0805a317ca0586953a1b4\transformed\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\ABDULLAH\.gradle\caches\transforms-3\76a9afef0b0147c2cdb80d574724ab34\transformed\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
 	android:name
-		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\ABDULLAH\.gradle\caches\transforms-3\20405584aca0805a317ca0586953a1b4\transformed\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\ABDULLAH\.gradle\caches\transforms-3\76a9afef0b0147c2cdb80d574724ab34\transformed\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [androidx.work:work-runtime:2.7.0] C:\Users\ABDULLAH\.gradle\caches\transforms-3\2d1244238a3dce8045ab993b0fab423a\transformed\work-runtime-2.7.0\AndroidManifest.xml:25:5-68
 	android:name

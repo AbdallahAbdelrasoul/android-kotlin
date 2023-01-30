@@ -13,8 +13,7 @@ import com.udacity.asteroidradar.network.ApiService
 import com.udacity.asteroidradar.network.asDatabaseModel
 import com.udacity.asteroidradar.network.parseAsteroidsJsonResult
 import com.udacity.asteroidradar.utils.Constants
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
+import kotlinx.coroutines.*
 import org.json.JSONObject
 import java.text.SimpleDateFormat
 import java.util.*

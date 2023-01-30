@@ -13,6 +13,7 @@ import retrofit2.converter.scalars.ScalarsConverterFactory
 import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.Query
+import java.util.concurrent.TimeUnit
 
 interface AsteroidApiService {
     // get The Picture of the day
@@ -31,7 +32,9 @@ interface AsteroidApiService {
 
 object ApiService {
     private val inspector = HttpLoggingInterceptor().setLevel(level = HttpLoggingInterceptor.Level.BODY)
-    private val okHttpClient = OkHttpClient.Builder().addInterceptor(inspector).build()
+    private val okHttpClient = OkHttpClient.Builder().addInterceptor(inspector)
+        .readTimeout(5000, TimeUnit.MILLISECONDS)
+        .build()
 
     private val moshi = Moshi.Builder()
         .add(KotlinJsonAdapterFactory())

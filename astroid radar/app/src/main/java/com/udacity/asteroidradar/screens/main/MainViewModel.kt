@@ -7,6 +7,7 @@ import com.udacity.asteroidradar.database.AsteroidDatabase
 import com.udacity.asteroidradar.domain.Asteroid
 import com.udacity.asteroidradar.domain.PictureOfDay
 import com.udacity.asteroidradar.repositery.Repository
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class MainViewModel(context: Context) : ViewModel() {
@@ -17,7 +18,6 @@ class MainViewModel(context: Context) : ViewModel() {
     // Create a repository instance using database
     private val repository = Repository(context, database)
 
-    // Live Asteroids
     var asteroidsToShow = MutableLiveData<String>()
 
     val asteroids: LiveData<List<Asteroid>> = asteroidsToShow.switchMap {
